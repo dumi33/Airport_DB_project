@@ -1,0 +1,53 @@
+<h1> {{title}}</h1>
+
+<table>
+    <tr>
+        <td>Airport_code</td>
+        <td>Name</td>
+        <td>City</td>
+    </tr>
+    {{#each airport}} <!-- 각 department를 출력 -->
+    <tr>
+        <td>{{Airport_code}}</td>
+        <td>{{Name}}</td>
+        <td>{{City}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+
+<h1> {{title2}}</h1>
+<table>
+    <tr>
+        <td>Flight_number</td>
+        <td>Airline</td>
+    </tr>
+    {{#each flight}} <!-- 각 flight를 출력 -->
+    <tr>
+        <td>{{Flight_number}}</td>
+        <td>{{Airline}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h1> {{title3}}</h1>
+<table>
+    <tr>
+        <td>Flight_no</td>
+        <td>Leg_no</td>
+        <td>Departure_airport_code</td>
+        <td>Arrival_airport_code</td>
+        <td>Departure_time</td>
+        <td>Arrival_time</td>
+    </tr>
+    {{#each flight_leg}} <!-- 각 flight_leg를 출력 -->
+    <tr>
+        <td>{{Flight_no}}</td>
+        <td>{{Leg_no}}</td>
+        <td>{{Departure_airport_code}}</td>
+        <td>{{Arrival_airport_code}}</td>
+        <td>{{Departure_time}}</td>
+        <td>{{Arrival_time}}</td>
+    </tr>
+    {{/each}}
+</table>

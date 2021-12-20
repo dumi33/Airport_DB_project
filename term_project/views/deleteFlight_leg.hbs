@@ -1,0 +1,34 @@
+
+<h1>{{ title3 }}</h1>
+<table>
+  <tr>
+    <td>Flight_no</td>
+    <td>Leg_no</td>
+    <td>Departure_airport_code</td>
+    <td>Arrival_airport_code</td>
+    <td>Departure_time</td>
+    <td>Arrival_time</td>
+  </tr>
+  {{#each flight_leg}}
+    <form method="post">
+      <tr>
+        <td>{{Flight_no}}</td>
+        <td>{{Leg_no}}</td>
+        <td>{{Departure_airport_code}}</td>
+        <td>{{Arrival_airport_code}}</td>
+        <td>{{Departure_time}}</td>
+        <td>{{Arrival_time}}</td>
+        <td style="border: none; margin-left: 10px;">
+          <button 
+            style="margin-left: 10px;"
+            type="submit" 
+            name="delBtn3"
+            value={{Leg_no}} 
+            formaction="/delete/flight_leg">
+          삭제
+          </button>
+        </td>
+      </tr>    
+    </form>
+  {{/each}}
+</table>

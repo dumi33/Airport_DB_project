@@ -1,0 +1,17 @@
+<h1> {{title}} </h1>
+
+<table>
+    <tr>
+        <td>Flight_number</td>
+        <td>Airline</td>
+    </tr>
+    {{#each flight_res}}
+        <form method="post">
+            <tr>
+                <td>{{Flight_number}}</td>
+                <td><input type="text" name = "airline" placeholder={{Airline}}></td>
+                <td><input type="submit" value="수정" formaction="/update/flight"></td>
+            </tr>
+        </form>
+    {{/each}}
+</table>

@@ -1,0 +1,69 @@
+<h1> Airport 데이터 삽입</h1>
+<form name = "airport" method="post" action='/'>
+    <div>
+        <label for="airport_code">Airport_code</label>
+        <input id = "airport_code" name = "airport_code" type = "text" required placeholder="Airport_code">
+    </div>
+    <div>
+        <label for="name">Name</label>
+        <input id = "name" name = "name" type = "text"  placeholder="Name">
+    </div>
+    <div>
+        <label for="city">City</label>
+        <input id = "city" name = "city" type = "text" required placeholder="City">
+    </div>  
+    <div>
+        <input type="submit" value="삽입">
+    </div>
+</form>
+
+<br><br>
+
+<h1> Flight 데이터 삽입</h1>
+<form id ="flight" method="post" action='/'>
+    <div>
+        <label for="flight_number">Flight_number</label>
+        <input id = "flight_number" name = "flight_number" type = "text" required placeholder="Flight_number">
+    </div>
+    <div>
+        <label for="airline">Airline</label>
+        <input id = "airline" name = "airline" type = "text" placeholder="Airline">
+    </div>
+    <div>
+        <input type = "submit" value="삽입">
+    </div>
+</form>
+
+<br><br>
+
+<h1> Flight_leg 데이터 삽입</h1>
+<form id ="flight_leg" method="post" action='/'>
+    <div>
+        <label for="flight_no">Flight_no</label>
+        <input id = "flight_no" name = "flight_no" type = "text" required placeholder="Flight_no">
+    </div>
+    <div>
+        <label for="leg_no">Leg_no</label>
+        <input id = "leg_no" name = "leg_no" type = "text" placeholder="Leg_no">
+    </div>
+    <div>
+        <label for="departure_airport_code">Departure_airport_code</label>
+        <input id = "departure_airport_code" name = "departure_airport_code" type = "text" placeholder="Departure_airport_code">
+    </div>
+    <div>
+        <label for="arrival_airport_code">Arrival_airport_code</label>
+        <input id = "arrival_airport_code" name = "arrival_airport_code" type = "text" placeholder="Arrival_airport_code">
+    </div>
+    <div>
+        <label for="departure_time">Departure_time</label>
+        <input id = "departure_time" name = "departure_time" type = "text" placeholder="Departure_time">
+    </div>
+    <div>
+        <label for="arrival_time">Arrival_time</label>
+        <input id = "arrival_time" name = "arrival_time" type = "text" placeholder="Arrival_time">
+    </div>
+    <div>
+        <input type = "submit" value="삽입">
+    </div>
+</form>
+

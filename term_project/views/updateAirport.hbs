@@ -1,0 +1,19 @@
+<h1> {{title}} </h1>
+
+<table>
+    <tr>
+        <td>Airport_code</td>
+        <td>Name</td>
+        <td>City</td>
+    </tr>
+    {{#each airport_res}}
+        <form method="post">
+            <tr>
+                <td>{{Airport_code}}</td>
+                 <td>{{Name}}</td>
+                <td><input type="text" name = "city" placeholder={{City}}></td>
+                <td><input type="submit" value="수정" formaction="/update/airport"></td>
+            </tr>
+        </form>
+    {{/each}}
+</table>

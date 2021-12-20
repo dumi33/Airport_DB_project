@@ -1,0 +1,23 @@
+<h1> {{title}}</h1>
+
+<table>
+    <tr>
+        <td>Rflight_no</td>
+        <td>Rleg_no</td>
+        <td>Rdate</td>
+        <td>Seat_number</td>
+        <td>C_name</td>
+        <td>C_phone</td>
+    </tr>
+    {{#each seat_reservation}} <!-- 각 seat_reservation를 출력 -->
+    <tr>
+        <td>{{Rflight_no}}</td>
+        <td>{{Rleg_no}}</td>
+        <td>{{Rdate}}</td>
+        <td>{{Seat_number}}</td>
+        <td>{{C_name}}</td>
+        <td>{{C_phone}}</td>
+    </tr>
+    {{/each}}
+</table>
+

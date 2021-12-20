@@ -1,0 +1,25 @@
+<h1> {{title}} </h1>
+
+<table>
+    <tr>
+        <td>Flight_no</td>
+        <td>Leg_no</td>
+        <td>Departure_airport_code</td>
+        <td>Arrival_airport_code</td>
+        <td>Departure_time</td>
+        <td>Arrival_time</td>
+    </tr>
+    {{#each flight_leg_res}}
+        <form method="post">
+            <tr>
+                <td>{{Flight_no}}</td>
+                <td>{{Leg_no}}</td>
+                <td>{{Departure_airport_code}}</td>
+                <td>{{Arrival_airport_code}}</td>
+                <td><input type="text" name = "daparture_time" placeholder={{Departure_time}}></td>
+                <td>{{Arrival_time}}</td>
+                <td><input type="submit" value = "수정" formaction="/update/flight_leg"></td>
+            </tr>
+        </form>
+    {{/each}}
+</table>
